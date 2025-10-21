@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Solar System - Phong Lighting</title>
+  <style>
+    body { margin: 0; overflow: hidden; background: black; }
+    canvas { width: 100vw; height: 100vh; display: block; }
+    #info {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      color: white;
+      background: rgba(0, 0, 0, 0.5);
+      padding: 6px 10px;
+      border-radius: 8px;
+      font-family: Arial, sans-serif;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+  <div id="info">
+    <b>Controls:</b> W/A/S/D - Move | Q/E - Up/Down | Mouse - Look | R - Reset Camera
+  </div>
+  <canvas id="glCanvas"></canvas>
+
+  <!-- Include glMatrix for matrix math -->
+  <script src="https://cdn.jsdelivr.net/npm/gl-matrix@3.4.3/gl-matrix-min.js"></script>
+  <script src="solarSystem.js"></script>
+</body>
+</html>
